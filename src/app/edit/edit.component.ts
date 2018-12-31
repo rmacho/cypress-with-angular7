@@ -1,11 +1,9 @@
 import { Component, Inject } from '@angular/core';
-import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material';
+import { MatDialogRef, MAT_DIALOG_DATA} from '@angular/material';
 import { Contact } from '../app.component';
 
 @Component({
   selector: 'app-edit',
-  /* templateUrl: './edit.component.html',
-  styleUrls: ['./edit.component.css'] */
   template: `
   <div mat-dialog-content>
     <p>Edit contact information</p>

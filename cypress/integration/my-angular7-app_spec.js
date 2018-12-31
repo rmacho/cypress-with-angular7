@@ -36,7 +36,6 @@ describe("First test for Angular 7 app using cypress", () => {
         cy.get('[data-cy=editButton]').first().click();
         cy.get('#mat-dialog-0').should('be.visible');
 
-        //update phone number
         cy.get('#mat-input-3').clear();
         cy.get('#mat-input-3').type('0687654321');
 
@@ -50,7 +49,6 @@ describe("First test for Angular 7 app using cypress", () => {
         cy.get('ul').contains('Test Name');
         cy.contains('CLEAR CONTACT LIST').click();
 
-        //test if contact is added to the list
         cy.get('ul').should('be.empty');
     });
 
